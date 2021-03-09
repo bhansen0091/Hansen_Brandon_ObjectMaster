@@ -35,7 +35,6 @@ const nameTypePoison = pokémon.filter(p => p.types.includes("poison")).map(p =>
 const firstTypeIfSecondFly = pokémon.filter(p => p.types[1] === "flying" ).map(p => p.types[0]);
 const countNormal = pokémon.filter(p => p.types.includes("normal")).length;
 
-
 console.log(idByThree);
 console.log("****************************************************");
 console.log(fireTypes);
