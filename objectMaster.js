@@ -26,3 +26,28 @@ const pokémon = Object.freeze([
     { "id": 148, "name": "Dragonair", "types": ["dragon"] }
 ]);
 
+const idByThree = pokémon.filter(p => p.id % 3 === 0);
+const fireTypes = pokémon.filter(p => p.types.includes("fire"));
+const multiTypes = pokémon.filter(p => p.types.length > 1);
+const justTheName = pokémon.map(p => p.name);
+const NameOver99 = pokémon.filter(p => p.id > 99).map(p => p.name);
+const NameTypePoison = pokémon.filter(p => p.types.includes("poison")).map(p => p.name);
+const firstTypeIfSecondFly = pokémon.filter(p => p.types[1] === "flying" ).map(p => p.types[0]);
+const countNormal = pokémon.filter(p => p.types.includes("normal")).length;
+
+
+console.log(idByThree);
+console.log("****************************************************");
+console.log(fireTypes);
+console.log("****************************************************");
+console.log(multiTypes);
+console.log("****************************************************");
+console.log(justTheName);
+console.log("****************************************************");
+console.log(NameOver99);
+console.log("****************************************************");
+console.log(NameTypePoison);
+console.log("****************************************************");
+console.log(firstTypeIfSecondFly);
+console.log("****************************************************");
+console.log(countNormal);
